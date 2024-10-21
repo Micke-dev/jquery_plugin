@@ -15,21 +15,18 @@ html {
     margin: 0 auto;
 }
 
-header, footer {
+header {
     background-color: #192a56;
     padding-top: 16px;
     color: #fff;
-}
-
-header {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
 }
 
-header > .container,
-footer > .container {
+header > .container {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -41,7 +38,7 @@ nav {
     display: none;
 }
 
-nav li {
+nav li{
     list-style: none;
     display: inline;
     margin-right: 16px;
@@ -50,7 +47,7 @@ nav li {
     text-transform: uppercase;
 }
 
-nav li a {
+nav li a{
     color: #fff;
     text-decoration: none;
 }
@@ -66,69 +63,6 @@ nav li a {
     background-color: #fff;
     display: block;
     margin-bottom: 4px;
-}
-
-.container-flex {
-    display: flex;
-}
-
-#sobre-a-loja img {
-    max-width: 400px;
-    margin-right: 24px;
-}
-
-section {
-    padding: 48px 0;
-}
-
-section h2 {
-    margin-bottom: 16px;
-}
-
-.lista-veiculos {
-    flex-wrap: wrap;
-}
-
-.lista-veiculos li {
-    list-style: none;
-    max-width: 30%;
-    margin-bottom: 24px;
-}
-
-.lista-veiculos li img {
-    max-width: 100%;
-}
-
-.lista-veiculos li h3 {
-    margin: 16px 0;
-}
-
-.item-central {
-    margin: 0 5%;
-}
-
-button {
-    display: block;
-    width: 100%;
-    padding: 8px 0;
-    border: none;
-    background-color: #119759;
-    color:#fff;
-    font-size: 16px;
-    font-weight: bold;
-    font-style: italic;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-.price {
-    margin: 16px 0;
-    display:block;
-}
-
-.price del {
-    color:#ccc;
-    font-size: 14px;
 }
 
 .form-campo {
@@ -156,15 +90,17 @@ form {
     max-width: 360px;
 }
 
-form button {
+button {
+    display: block;
+    width: 100%;
+    padding: 8px, 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
     max-width: 120px;
-}
-
-footer li {
-    list-style: none;
-    margin-left: 16px;
-}
-
-footer li img {
-    height: 32px;
 }
